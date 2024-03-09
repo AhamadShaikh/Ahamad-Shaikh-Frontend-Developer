@@ -1,27 +1,28 @@
 import React from 'react'
 import bgimg2 from "../assets/bgimg2.png"
+import { WallectConnect } from './WalletConnect'
 
 const Ido = () => {
     return (
         <div className='w-full text-center border border-black'>
             <div className='bg-black'>
-                <span className='text-main-red text-[20px] font-bold'>PARTICIPATE IN OUR EVENT</span>
+                <span className='text-main-red text-[30px] font-bold'>PARTICIPATE IN OUR EVENT</span>
             </div>
-            <div className='bg-gradient-to-tl w-full relative flex flex-col gap-10 border border-black'>
-                <img src={bgimg2} alt="" className='w-full h-full object-cover absolute mix-blend-overlay blur-sm' />
+            <div className='bg-gradient-to-tl w-full relative flex flex-col gap-10 border border-black '>
+                <img src={bgimg2} alt="" className='w-full h-full object-cover absolute mix-blend-overlay blur-sm'/>
 
-                <div className='main-div flex  justify-center items-center  border border-black'>
+                <div className='main-div flex justify-center items-center border border-black sm:flex-col md:flex-row sm:p-2 lg:flex-row'>
 
 
-                    <div id='left' className='flex flex-col gap-10 w-[full]'>
+                    <div id='left' className='flex flex-col gap-10 w-[full] items-center justify-center'>
 
-                        <div className='text-white w-[53.9%] h-[55.5%]  border border-main-red bg-black rounded-2xl m-2'>
+                        <div className='text-white w-[53.9%] h-[55.5%]  border border-main-red bg-black rounded-2xl m-2 p-2'>
                             <span> During our IDO event, you will gain early access to our <br /> revolutionary ecosystem, designed to empower <br /> everyone to share wealth and achieve success.</span>
                         </div>
 
-                        <div className='flex flex-col text-left w-[300px] h-[300px] items-center border rounded-[10px] gap-y-[10px] border-main-red pt-4 bg-black'>
+                        <div className='flex flex-col text-left w-[300px] h-[300px] items-center border rounded-2xl gap-y-[10px] border-main-red pt-4 bg-black p-2'>
 
-                            <div className='text-white bg-main-orange rounded-md p-2 px-4 mb-'>
+                            <div className='text-white bg-main-orange rounded-md p-2 px-4'>
                                 TOKEN INFO
                             </div>
 
@@ -55,20 +56,19 @@ const Ido = () => {
                             </div>
 
                         </div>
-                        <div className='text-white bg-main-orange rounded-md p-2 px-4 w-[140px]'>
+                        {/* <div className='text-white bg-main-orange rounded-md p-2 px-4 w-[140px]'>
                             <button>Connect Wallet</button>
-                        </div>
+                        </div> */}
+                        <WallectConnect/>
 
-                        <div>
+                        <div className='flex justify-center items-center'>
                             <span className='text-main-red text-[20px] font-bold '>BECOME AN AFFILIATE $ EARN 7% AS COMMISSION</span>
                         </div>
 
                     </div>
 
 
-
-
-                    <div id='right' className='border border-main-red flex flex-col gap-4 rounded-lg text-white w-[40%] h-[500px] justify-center items-center font-zcoolkuaile bg-black'>
+                    <div id='right' className='border border-main-red flex flex-col gap-4 rounded-lg text-white w-[50%] h-[500px] justify-center items-center font-zcoolkuaile bg-black'>
 
                         <span className='text-main-red text-[20px] font-bold'>PRESALE 1</span>
 
@@ -104,3 +104,5 @@ const Ido = () => {
 }
 
 export default Ido
+
+

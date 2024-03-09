@@ -4,15 +4,15 @@ import img4 from "../assets/img4.png";
 
 const Tokenomics = () => {
     return (
-        <div className='w-full flex text-center '>
-            <div className='bg-black text-center '>
-                <span className='text-main-red text-[20px] font-bold'>TOKONOMICS</span>
+        <div className='w-full flex flex-col text-center'>
+            <div className='bg-black'>
+                <span className='text-main-red text-[30px] font-bold '>TOKONOMICS</span>
             </div>
-            <div className='bg-gradient-to-tl h-[500px] w-full relative flex flex-col gap-10'>
+            <div className='bg-gradient-to-tl h-[500px] w-full relative gap-10 '>
                 <img src={bgimg3} alt="" className='w-full h-full object-cover absolute mix-blend-overlay' />
 
-                <div className='flex justify-around items-center mt-[100px]'>
-                    <div className='flex flex-col w-[300px] h-[300px] items-center border rounded-[10px] gap-y-[10px] border-main-red pt-4 bg-black'>
+                <div className='flex justify-around items-center mt-[100px] sm:flex-col gap-20 md:flex-col lg:flex-row'>
+                    <div className='flex flex-col w-full sm:w-[300px] h-[300px] items-center border rounded-[10px] gap-y-[10px] border-main-red pt-4 bg-black'>
 
                         <div className='text-white bg-main-orange rounded-md p-2 px-4'>
                             TOKEN DETAILS
@@ -39,8 +39,8 @@ const Tokenomics = () => {
                         </div>
 
                     </div>
-                    <div className='w-[40%] bg-black'>
-                        <img src={img4} alt="" className='bg-black'/>
+                    <div className='w-full sm:w-[40%] bg-black'>
+                        <img src={img4} alt="" className='bg-black' />
                     </div>
                 </div>
             </div>
